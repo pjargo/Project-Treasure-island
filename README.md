@@ -9,9 +9,9 @@
 ### 2. Image extraction: 
   <p> Input: Directory of .pdf documents </p>
   <p> Output:Gallary of all the images extracted from the .pdfs </p>
-  * This is a web-based application developed in Django that extracts all the images from .pdf documents, stores them in a local media foder
-  * Backend database is SQL
-  * All data processing is done in python
+  <li> This is a web-based application developed in Django that extracts all the images from .pdf documents, stores them in a local media foder </li>
+  <li> Backend database is SQL </li>
+  <li> All data processing is done in python </li>
 
 #### Required Libraries:
     1. Django: Full stack web development framework 
@@ -24,6 +24,6 @@
       What does PyMuPDF do?
       processes .pdfs and allows user to extract text and images, search for text, render pages, etc.
     
-3. Mathematical Language Processing:
+#### 3. Mathematical Language Processing:
   Input: .pdf document
   Output:  ...
