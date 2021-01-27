@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+</head>
+<body>
+    <h1>Gallery</h1>
+
+    <img src = "{% static 'images/image1_1.png' %}"
+
+
+    {% if gallery %}
+        {% for photo in gallery %}
+            <p><img src="{{ photo.photo.url }}" width="300px"></p>
+            <p>{{ photo.description }}</p>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
