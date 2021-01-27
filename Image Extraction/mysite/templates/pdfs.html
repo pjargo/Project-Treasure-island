@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Treasure Island</title>
+    <style>
+          ul.no-bullets {
+          list-style-type: none;
+          margin: 0;
+          padding: 10;}
+    </style>
+</head>
+<body>
+<h1>Project Treasure Island</h1>
+<h3> User: {{ request.user }} </h3>
+<div>
+    <h4> Directions:</h4>
+        <ul class="no-bullets">
+        {% for abc in object_list %}
+            <li>{{forloop.counter }}: {{abc}}</li>
+        {% endfor %}
+        </ul>
+    <br><br>
+</div>
+<div>
+    <form method ="post" enctype="multipart/form-data"> {% csrf_token %}
+        Upload Folder:  <input type="file" name="file_field" id="files" multiple directory = "" webkitdirectory = "" mozdirectory="" /> <br/><br/>
+                        <input class ="button" type="submit" value = "Upload" name="upload"/>
+                        <br/><br/>
+    </form>
+</div>
+</body>
+</html>
