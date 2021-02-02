@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Treasure Island</title>
+    <style>
+          ul.no-bullets {
+          list-style-type: none;
+          margin: 0;
+          padding: 10;}
+
+          .header {
+            background-color: #1ccaa7;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: white;}
+
+          .directions {
+            text-align: center;
+            border: double}
+
+          .button {
+            width: 200px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            text-align: center;
+            background-color: #1ccaa7;
+            padding: 10px 10px;
+            color: white;
+            font-size: 16px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            }
+
+          .button:hover {
+            background-color: #159d82;
+            color: white}
+
+          .button:active {
+              background-color: #159d82;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+
+          .file-upload {
+            text-align: center;
+            padding: 5px;
+            transform: translateX(45px);
+            }
+
+          .file-upload {
+              font-weight: bold;}
+    </style>
+</head>
+<body>
+    <div class = "header">
+        <h1>Project Treasure Island</h1>
+        <h3> User: {{ request.user }} </h3>
+    </div>
+    <div class = "directions">
+        <h4> Directions:</h4>
+            <ul class="no-bullets">
+            {% for abc in object_list %}
+                <li>{{forloop.counter }}: {{abc}}</li>
+            {% endfor %}
+            </ul>
+        <br><br>
+    </div>
+    <div>
+        <form method ="post" enctype="multipart/form-data"> {% csrf_token %}
+            <br/>
+            <div class = "file-upload" >
+            Upload Folder:  <input type="file" name="file_field" id="files" multiple directory = "" webkitdirectory = "" mozdirectory="" /></div> <br/>
+                            <input class ="button" type="submit" value = "Upload" name="upload"/>
+                            <br/><br/>
+        </form>
+    </div>
+</body>
+</html>
