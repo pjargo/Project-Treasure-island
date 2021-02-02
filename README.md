@@ -29,14 +29,14 @@
   
 ### 2. Image extraction: 
   <p> Input: Directory of .pdf documents </p>
-  <p> Output:Gallary of all the images extracted from the .pdfs </p>
-  <li> This is a web-based application developed in Django that extracts all the images from .pdf documents, stores them in a local media foder </li>
+  <p> Output:Gallery of all the images extracted from the .pdfs </p>
+  <li> This is a web-based application developed in Django that extracts all the images from .pdf documents, stores them in a local media folder </li>
   <li> Backend database is SQL </li>
   <li> All data processing is done in python </li>
 
 #### Required Libraries:
     1. Django: Full stack web development framework 
-      Intall with: pip install django
+      Install with: pip install django
     2. PyMuPDF (fitz) 
       - https://pypi.org/project/PyMuPDF/#files
       - install with: pip install PyMuPDF
