@@ -36,11 +36,20 @@
 
 #### Required Libraries:
     1. Django: Full stack web development framework 
+      Intall with: pip install django
     2. PyMuPDF (fitz) 
       - https://pypi.org/project/PyMuPDF/#files
-      - pip install PyMuPDF
-    3. from io import BytesIO 
-    4. from PIL import Image 
+      - install with: pip install PyMuPDF
+      - import fitz
+    3. io
+      - from io import BytesIO 
+    4. PIL 
+      - form PIL import Image
+    5. filetype
+      - Install with: pip install filetype
+      - import filetype
+    6. os
+      - import os
       
       What does PyMuPDF do?
       processes .pdfs and allows user to extract text and images, search for text, render pages, etc.
