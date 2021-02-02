@@ -1,11 +1,11 @@
 # Project-Treasure-island
 
-## Sofware Development tool concepts:
+## Software Development tool concepts:
 
 ### 1. Named Entities Extraction:
   <p> Input: .pdf document </p>
   <p> Output: Rendering of the document text with Named entities extracted </p>
-  <li> This is jupyter notebook for processing .pdf documents and html webpages and extracting names entities </li>
+  <li> This is Jupyter notebook for processing .pdf documents and html webpages and extracting names entities </li>
   <li> Backend database is SQL </li>
   <li> All data processing is done in python </li>
 
